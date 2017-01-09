@@ -22,3 +22,4 @@ Se si prova ad accedere su un altro Pc apparirà la scritta "l'user è attuament
 <p> Davide Tudisco  </p>
 
 ###<b> Ringraziamenti </b>
+Ringrazio giò
