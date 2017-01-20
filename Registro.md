@@ -7,7 +7,7 @@ Utilizzo dei Macro Blocchi come componenti più semplici
 ###<b> Istruzioni di installazione </b>
 Il registro elettronico online verrà installato in locale sul proprio pc. Inoltre sarà progettato per essere installato e utilizzato attraverso un server remoto, per consentire a tutti gli utenti di visualizzare i voti o scrivere gli argomenti delle lezioni svolte, tramite internet.
 ###<b> Manuale d’uso </b>
-Se è la prima volta che si accede al registro si deve fare una registrazione con username e password che verrano richiesto ogni vola all'accesso appena si entra nella pagina del portale si potranno vedere delle caselline con su scritte le materie se si clicca sulla casellina appare con tutti i voti della materia stessa.Se la media è inferiore a 6 la scritta appare in rosso altrimenti appare in verde.Invece per i professori della materia appariranno tutti i voti ed ogni voto negativo verra scritto in rosso, e potra aggiungere e togliere i voti.
+Se è la prima volta che si accede al registro si deve fare una registrazione con username e password che verrano richiesto ogni volta all'accesso appena si entra nella pagina del portale si potranno vedere delle caselline con su scritte le materie se si clicca sulla casellina appare con tutti i voti della materia stessa.Se la media è inferiore a 6 la scritta appare in rosso altrimenti appare in verde.Invece per i professori della materia appariranno tutti i voti ed ogni voto negativo verra scritto in rosso, e potra aggiungere e togliere i voti.
 Se si prova ad accedere su un altro Pc apparirà la scritta "l'user è attuamente in uso in un altra piattaforma".
 
 ###<b> Autori </b>
