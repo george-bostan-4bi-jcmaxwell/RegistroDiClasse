@@ -23,4 +23,4 @@ Username e password che verranno richiesti ogni volta all'accesso. Verrà indica
 <p> Davide Tudisco  </p>
 
 ###<b> Ringraziamenti </b>
-<p>ringraziamo i professori per la loro disponibiltà.<p/>
+<p> Ringraziamo i professori per la loro disponibiltà, la loro collaborazione e il loro aiuto per questo progetto.<p/>
