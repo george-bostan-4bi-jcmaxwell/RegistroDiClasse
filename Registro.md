@@ -1,6 +1,10 @@
+
 #<b> Registro Elettronico </b>
 ##<b> Descrizione programma </b>
-Il programma permette ai professori e agli studenti di accedere al registro inserendo il proprio nickname. I professori potranno vedere i voti di tutta la classe mentre gli studenti potranno vedere i voti di ogni materia. Viene calcolata una media per ogni materia e lo studente potrà vedere in rosso la scritta A RISCHIO BOCCIATURA se la media è insufficiente mentre in verde la scritta PROMOSSO se la media sufficiente.
+ 
+
+Il programma permdette ai professori e agli studenti di accedere al registro inserendo il proprio nickname. I professori potranno vedere i voti di tutta la classe mentre gli studenti potranno vedere i voti di ogni materia. Viene calcolata una media per ogni materia e lo studente potrà vedere in rosso la scritta A RISCHIO BOCCIATURA se la media è insufficiente mentre in verde la scritta PROMOSSO se la media sufficiente.
+
 
 ###<b> Istruzioni di installazione </b>
 Il registro elettronico online verrà installato in locale sul proprio pc. Inoltre sarà progettato per essere installato e utilizzato attraverso un server remoto, per consentire a tutti gli utenti di visualizzare i voti o scrivere gli argomenti delle lezioni svolte, tramite internet.
@@ -19,3 +23,4 @@ Username e password che verranno richiesti ogni volta all'accesso. Verrà indica
 <p> Davide Tudisco  </p>
 
 ###<b> Ringraziamenti </b>
+<p>ringraziamo i professori per la loro disponibiltà.<p/>
