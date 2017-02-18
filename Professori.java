@@ -31,6 +31,7 @@ public class Professore {
       votiMateria[i] = sc.nextDouble();
     }
   }
+  
   public void togliVoti() {
     int i, pos = 0, num;
     bool trovato = false;
@@ -54,3 +55,24 @@ public class Professore {
       System.out.println("non è stato trovato nessun voto uguale a quello inserito");
     }
   }
+  
+  public double mediaVoti() {
+    double media;
+    int somma = 0;
+    int i;
+    for (i=0; i<votiMax; i++)
+    {
+      somma = somma + votiMateria[i];
+    }
+    media = somma / votiMax;
+    if (media >= 6)
+    {
+      System.out.println("PROMOSSO");
+    }
+    else
+    {
+      System.out.println("A RISCHIO BOCCIATURA");
+    }
+    return media;
+  }
+}
