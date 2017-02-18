@@ -1,5 +1,4 @@
 package registro;
-import java.util.Scanner;
 
 public class Studente {
   private String nome;
