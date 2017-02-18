@@ -23,11 +23,34 @@ public class Professore {
   public String getNomeUtente () {return nomeUtente;}
   private void setNomeUtente (String u) {nomeUtente = u;}
   
-  public double inserisciVoti() {
+  public void inserisciVoti() {
     int i;
+    Scanner sc = new Scanner (System.in);
     for (i=0; i<votiMax; i++)
     {
-      votiMateria[i] =
+      votiMateria[i] = sc.nextDouble();
     }
-
-}  
+  }
+  public void togliVoti() {
+    int i, pos = 0, num;
+    bool trovato = false;
+    Scanner sc = new Scanner (System.in);
+    System.out.println("inserire il voto che si vuole togliere");
+    num = sc.nextDouble();
+    for (i=0; i<votiMax; i++)
+    {
+      if (num == votiMateria[i])
+      {
+        pos = i;
+        trovato = true;
+      }
+    }
+    if (trovato == true)
+    {
+      votiMateria[pos] = null;
+    }
+    else
+    {
+      System.out.println("non è stato trovato nessun voto uguale a quello inserito");
+    }
+  }
