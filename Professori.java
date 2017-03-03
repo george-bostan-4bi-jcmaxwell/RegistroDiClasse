@@ -9,7 +9,7 @@ public class Professore {
   private double votiMateria[];
   private static final int votiMax = 10;
     
-  public Studente (String nome, String cognome, String nomeUtente, String materia) {
+  public Professore (String nome, String cognome, String nomeUtente, String materia) {
     setNome (nome);
     setCognome (cognome);
     setNomeUtente (nomeUtente);
