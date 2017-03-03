@@ -12,7 +12,7 @@ public class Studente {
   private int numVotiMatematica;
   private int numVotiInglese;
   private int numVotiInformatica;
-  private static final int Voti = 10;
+  private static final int Voti = 30;
   
   public Studente (String nome, String cognome, String nomeUtente) {
     setNome (nome);
