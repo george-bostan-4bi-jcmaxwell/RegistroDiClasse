@@ -8,6 +8,12 @@ public class Studente {
   private double[] matematica;
   private double[] inglese;
   private double[] informatica;
+  private double[] sistemi;
+  private double[] storia;
+  private double[] tpsit;
+  private double[] ginnastica;
+  private double[] telecomunicazioni;
+
   private int numVotiItaliano;
   private int numVotiMatematica;
   private int numVotiInglese;
