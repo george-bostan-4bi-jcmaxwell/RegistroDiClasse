@@ -32,7 +32,7 @@ public class registrazione {
           buffW.nextLine();
           buffW.write(password);
           buffW.nextLine();
-          System.out.println("File creato con successo");
+          System.out.println("Il file è stato creato!");
           buffW.close();
         }
         catch(Exception e)
