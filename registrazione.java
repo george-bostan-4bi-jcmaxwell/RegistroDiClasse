@@ -1,11 +1,14 @@
 package registro;
-
+import java.util.Scanner;
 import java.io.*;
 
 public class registrazione {
   public registrazione()
     {
-      
+      System.out.println ("inserire il nome utente");
+      Scanner nomeUtente = new Scanner (System.in);
+      System.out.println ("inserire una password");
+      Scanner password = new Scanner (System.in);
       File newFile = new File("registrazione"+".txt");
       if(newFile.exists())
       {     
@@ -25,9 +28,12 @@ public class registrazione {
         {
           FileWriter fileW = new FileWriter(newFile);
           BufferedWriter buffW = new BufferedWriter(fileW);                         
-          buffW.write("ciaoooo");  // scrive nel file , per andare a capo usa, " buffW.nextLine(); "
+          buffW.write(nomeUtente);
+          buffW.nextLine();
+          buffW.write(password);
+          buffW.nextLine();
           System.out.println("File creato con successo");
-          buffW.close();  // chiude il file e salva
+          buffW.close();
         }
         catch(Exception e)
         {
