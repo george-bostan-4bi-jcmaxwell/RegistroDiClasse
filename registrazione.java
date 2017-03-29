@@ -5,16 +5,17 @@ import java.io.*;
 public class registrazione {
   public registrazione()
     {
-      File newFile = new File(""+".txt");
-      if(newFile.exists())    // se il file esiste
+      
+      File newFile = new File("registrazione"+".txt");
+      if(newFile.exists())
       {     
         System.out.println("Il file esiste già o non la directory non esiste");   
-        }
+      }
         else
-        {
+      {
         try
         {
-          newFile.createNewFile();    // se non esiste crea il file    
+          newFile.createNewFile();    
         }
         catch(Exception e)
         {
