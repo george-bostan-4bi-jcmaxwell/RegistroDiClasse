@@ -25,3 +25,14 @@ public class Orario {
     private void Setminuti (int minuti){this.minuti=minuti;}
     
 }
+
+Public int  Calendario (){
+GregorianCalendar gc = new GregorianCalendar();
+int anno = gc.get(Calendar.YEAR);
+int mese = gc.get(Calendar.MONTH) + 1;
+int giorno = gc.get(Calendar.DATE);
+int ore = gc.get(Calendar.HOUR);
+int min = gc.get(Calendar.MINUTE);
+int sec = gc.get(Calendar.SECOND);
+System.out.println(giorno + “/” + mese + “/” + anno + ” ” + ore + “:” + min + “:” + sec);
+}
