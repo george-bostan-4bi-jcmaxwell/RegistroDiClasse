@@ -1,6 +1,6 @@
 package registro;
 
-public class Orario {
+public class Orario  {
     private int giorno;
     private int mese;
     private int anno;
