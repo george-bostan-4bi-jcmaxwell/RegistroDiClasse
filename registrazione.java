@@ -12,7 +12,7 @@ public class registrazione {
       File newFile = new File("registrazione"+".txt");
       if(newFile.exists())
       {     
-        System.out.println("Il file esiste già o non la directory non esiste");   
+        System.out.println("Il file esiste già o la directory non esiste");   
       }
         else
       {
