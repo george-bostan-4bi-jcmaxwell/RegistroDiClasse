@@ -28,10 +28,20 @@ public class Studente {
     numVotiMatematica = 0;
     numVotiInglese = 0;
     numVotiInformatica = 0;
+    numVotiSistemi = 0;
+    numVotiStoria = 0;
+    numVotiTpsit = 0;
+    numVotiGinnastica = 0;
+    numVotiTelecomunicazioni = 0;
     italiano = new double[Voti];
     matematica = new double[Voti];
     inglese = new double[Voti];
     informatica = new double[Voti];
+    sistemi = new double[Voti];
+    storia  = new double[Voti];= 
+    tpsit =new double [Voti];=
+    ginnastica  = new double[Voti];
+    telecomunicazioni  = new double[Voti];
     }
     
   public String getNome () {return nome;}
@@ -79,11 +89,62 @@ public class Studente {
     mediaInformatica = somma / votiInformatica;
     somma = 0;
     i = 0;
+    for (i=0; i<votiSistemi; i++)
+    {
+      somma = somma + sistemi[i];
+    }
+    mediaSistem = somma / votiSistemi;
+    somma = 0;
+    i = 0;
+    return mediaSistemi;
+    
+    for (i=0; i<votiStoria; i++)
+    {
+      somma = somma + storia[i];
+    }
+    mediaStoria = somma / votiStoria;
+    somma = 0;
+    i = 0;
+    return mediaStoria;
+    
+    for (i=0; i<votiGinnastica; i++)
+    {
+      somma = somma + ginnastica[i];
+    }
+    mediaGinnastica = somma / votiGinnastica;
+    somma = 0;
+    i = 0;
+    return mediaGinnastica;
+    
+    for (i=0; i<votiTpsit; i++)
+    {
+      somma = somma + tpsit[i];
+    }
+    mediaTpsit = somma / votiTpsit;
+    somma = 0;
+    i = 0;
+    return mediaTpsit;
+    
+    for (i=0; i<votiTelecomunicazioni; i++)
+    {
+      somma = somma + telecomunicazioni[i];
+    }
+    mediaTelecomunicazioni = somma / votitelecomunicazioni;
+    somma = 0;
+    i = 0;
+    return mediaTelecomunicazioni;
+    
+    
     return mediaInformatica;
     System.out.println("la media di italiano è:" + mediaItaliano + " .");
     System.out.println("la media di matematica è:" + mediaMatematica + " .");
     System.out.println("la media di inglese è:" + mediaInglese + " .");
     System.out.println("la media di informatica è:" + mediaInformatica + " .");
+    System.out.println("la media di sistemi è:" + mediaSistemi + " .");
+    System.out.println("la media di storia è:" + mediaStoria + " .");
+    System.out.println("la media di tpsit è:" + mediaTpsit + " .");
+    System.out.println("la media di ginnastica è:" + mediaGinnastica + " .");
+    System.out.println("la media di telecomunicazioni è:" + mediaTelecomunicazioni + " .");
     }
     
     public String statoStudente() {
