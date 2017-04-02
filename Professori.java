@@ -30,7 +30,7 @@ public class Professore {
   
   public void menuProfessori() {
     int numP;
-    
+    Scanner sc = new Scanner(System.in);
     do
     {
         System.out.println ("Sceglire un numero: ");
@@ -64,6 +64,7 @@ public class Professore {
       int a = 0, b = 0, c = 0, d = 0, e = 0, f = 0, g = 0, h = 0, i = 0;
       double voto;
       String inMateria;
+      Scanner sc = new Scanner(System.in);
       System.out.println ("Sceglire la materia:");
       System.out.println ("Italiano");
       System.out.println ("Storia");
@@ -142,6 +143,7 @@ public class Professore {
       boolean trovato = false;
       String inMateria;
       double elim;
+      Scanner sc = new Scanner(System.in);
       System.out.println ("Sceglire la materia:");
       System.out.println ("Italiano");
       System.out.println ("Storia");
@@ -344,6 +346,7 @@ public class Professore {
       int i;
       double somma, media;
       String inMateria;
+      Scanner sc = new Scanner(System.in);
       System.out.println ("Sceglire la materia:");
       System.out.println ("Italiano");
       System.out.println ("Storia");
