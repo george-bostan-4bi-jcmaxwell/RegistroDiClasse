@@ -340,7 +340,7 @@ public class Professore {
           break;
       }
     }
-    public String visualizzaMedia(){
+    public void visualizzaMedia(){
       int i;
       double somma, media;
       String inMateria;
