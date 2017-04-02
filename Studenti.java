@@ -3,43 +3,9 @@ package registro;
 public class Studente {
   private String nome;
   private String cognome;
-  private double[] italiano;
-  private double[] matematica;
-  private double[] inglese;
-  private double[] informatica;
-  private double[] sistemi;
-  private double[] storia;
-  private double[] tpsit;
-  private double[] ginnastica;
-  private double[] telecomunicazioni;
-
-  private int numVotiItaliano;
-  private int numVotiMatematica;
-  private int numVotiInglese;
-  private int numVotiInformatica;
-  private static final int Voti = 30;
-  
   public Studente (String nome, String cognome) {
     setNome (nome);
     setCognome (cognome);
-    numVotiItaliano = 0;
-    numVotiMatematica = 0;
-    numVotiInglese = 0;
-    numVotiInformatica = 0;
-    numVotiSistemi = 0;
-    numVotiStoria = 0;
-    numVotiTpsit = 0;
-    numVotiGinnastica = 0;
-    numVotiTelecomunicazioni = 0;
-    italiano = new double[Voti];
-    matematica = new double[Voti];
-    inglese = new double[Voti];
-    informatica = new double[Voti];
-    sistemi = new double[Voti];
-    storia  = new double[Voti];= 
-    tpsit =new double [Voti];=
-    ginnastica  = new double[Voti];
-    telecomunicazioni  = new double[Voti];
     }
     
   public String getNome () {return nome;}
@@ -49,7 +15,7 @@ public class Studente {
   
   public void menuStudenti() {
     int numS;
-    
+    Scanner sc = new Scanner (System.in);
     do
     {
         System.out.println ("Sceglire un numero: ");
@@ -75,5 +41,238 @@ public class Studente {
     }
     while (numS != 3)
     
-    public void professore.visualizzaMedia() {
-   
+    public double visualizzaMedia(Professore p){
+      int i;
+      double somma, mediaIta, mediaSto, mediaMat, mediaInf, mediaIng, mediaTPSI, mediaTel, mediaSis, mediaEd;
+      String inMateria;
+      Scanner sc = new Scanner(System.in);
+      System.out.println ("Sceglire la materia:");
+      System.out.println ("Italiano");
+      System.out.println ("Storia");
+      System.out.println ("Matematica");
+      System.out.println ("Informatica");
+      System.out.println ("Inglese");
+      System.out.println ("TPSIT");
+      System.out.println ("Telecomunicazioni");
+      System.out.println ("Sistemi");
+      System.out.println ("Educazione Fisica");
+      inMateria = sc.nextString;
+      switch(inMateria)
+      {
+        case "Italiano":
+          somma = 0;
+          for (i=0; i<votiMax; i++)
+          {
+            somma = somma + p.votiItaliano[i];
+          }
+          mediaIta = somma / votiMax;
+          System.out.println ("la media e: "+mediaIta);
+          return mediaIta;
+          break;
+        case "Storia";
+          somma = 0;
+          for (i=0; i<votiMax; i++)
+          {
+            somma = somma + p.votiStoria[i];
+          }
+          mediaSto = somma / votiMax;
+          System.out.println ("la media e: "+mediaSto)
+          return mediaSto;
+          break;
+        case "Matematica":
+          somma = 0;
+          for (i=0; i<votiMax; i++)
+          {
+            somma = somma + p.votiMatematica[i];
+          }
+          mediaMat = somma / votiMax;
+          System.out.println ("la media e: "+mediaMat)
+          return mediaMat;
+          break;
+        case "Informatica";
+          somma = 0;
+          for (i=0; i<votiMax; i++)
+          {
+            somma = somma + p.votiInformatica[i];
+          }
+          mediaInf = somma / votiMax;
+          System.out.println ("la media e: "+mediaInf)
+          return mediaInf;
+          break;
+        case "Inglese";
+          somma = 0;
+          for (i=0; i<votiMax; i++)
+          {
+            somma = somma + p.votiInglese[i];
+          }
+          mediaIng = somma / votiMax;
+          System.out.println ("la media e: "+mediaIng)
+          return mediaIng;
+          break;
+        case "TPSIT";
+          somma = 0;
+          for (i=0; i<votiMax; i++)
+          {
+            somma = somma + p.votiTPSIT[i];
+          }
+          mediaTPSIT = somma / votiMax;
+          System.out.println ("la media e: "+mediaTPSIT)
+          return mediaTPSIT;
+          break;
+        case "Telecomunicazioni";
+          somma = 0;
+          for (i=0; i<votiMax; i++)
+          {
+            somma = somma + p.votiTelecomunicazioni[i];
+          }
+          mediaTel = somma / votiMax;
+          System.out.println ("la media e: "+mediaTel)
+          return mediaTel;
+          break;
+        case "Sistemi";
+          somma = 0;
+          for (i=0; i<votiMax; i++)
+          {
+            somma = somma + p.votiSistemi[i];
+          }
+          mediaSis = somma / votiMax;
+          System.out.println ("la media e: "+mediaSis)
+          return mediaSis;
+          break;
+        case "Educazione Fisica";
+          somma = 0;
+          for (i=0; i<votiMax; i++)
+          {
+            somma = somma + p.votiEducazioneFisica[i];
+          }
+          mediaEd = somma / votiMax;
+          System.out.println ("la media e: "+mediaEd)
+          return mediaEd;
+          break;
+        default:
+          System.out.println ("La materia inserita non e stata scritta correttamente");
+          break;
+      }
+    }
+    
+    public void visualizzaStato(Professore p){
+      int i;
+      mediaIta = visualizzaMedia(p);
+      mediaSto = visualizzaMedia(p);
+      mediaMat = visualizzaMedia(p);
+      mediaInf = visualizzaMedia(p);
+      mediaIng = visualizzaMedia(p); 
+      mediaTPSI = visualizzaMedia(p); 
+      mediaTel = visualizzaMedia(p); 
+      mediaSis = visualizzaMedia(p); 
+      mediaEd = visualizzaMedia(p);
+      String inMateria;
+      Scanner sc = new Scanner(System.in);
+      System.out.println ("Sceglire la materia:");
+      System.out.println ("Italiano");
+      System.out.println ("Storia");
+      System.out.println ("Matematica");
+      System.out.println ("Informatica");
+      System.out.println ("Inglese");
+      System.out.println ("TPSIT");
+      System.out.println ("Telecomunicazioni");
+      System.out.println ("Sistemi");
+      System.out.println ("Educazione Fisica");
+      inMateria = sc.nextString;
+      switch(inMateria)
+      {
+        case "Italiano":
+          if (mediaIta >= 6)
+          {
+            System.out.println ("PROMOSSO");
+          }
+          else
+          {
+            System.out.println ("RISCHIO BOCCIATURA");
+          }
+          break;
+        case "Storia";
+          if (mediaSto >= 6)
+          {
+            System.out.println ("PROMOSSO");
+          }
+          else
+          {
+            System.out.println ("RISCHIO BOCCIATURA");
+          }
+          break;
+        case "Matematica":
+          if (mediaMat >= 6)
+          {
+            System.out.println ("PROMOSSO");
+          }
+          else
+          {
+            System.out.println ("RISCHIO BOCCIATURA");
+          }
+          break;
+        case "Informatica";
+          if (mediaInf >= 6)
+          {
+            System.out.println ("PROMOSSO");
+          }
+          else
+          {
+            System.out.println ("RISCHIO BOCCIATURA");
+          }
+          break;
+        case "Inglese";
+          if (mediaIng >= 6)
+          {
+            System.out.println ("PROMOSSO");
+          }
+          else
+          {
+            System.out.println ("RISCHIO BOCCIATURA");
+          }
+          break;
+        case "TPSIT";
+          if (mediaTPSIT >= 6)
+          {
+            System.out.println ("PROMOSSO");
+          }
+          else
+          {
+            System.out.println ("RISCHIO BOCCIATURA");
+          }
+          break;
+        case "Telecomunicazioni";
+          if (mediaTel >= 6)
+          {
+            System.out.println ("PROMOSSO");
+          }
+          else
+          {
+            System.out.println ("RISCHIO BOCCIATURA");
+          }
+          break;
+        case "Sistemi";
+          if (mediaSis >= 6)
+          {
+            System.out.println ("PROMOSSO");
+          }
+          else
+          {
+            System.out.println ("RISCHIO BOCCIATURA");
+          }
+          break;
+        case "Educazione Fisica";
+          if (mediaEd >= 6)
+          {
+            System.out.println ("PROMOSSO");
+          }
+          else
+          {
+            System.out.println ("RISCHIO BOCCIATURA");
+          }
+          break;
+        default:
+          System.out.println ("La materia inserita non e stata scritta correttamente");
+          break;
+      }
+    }
