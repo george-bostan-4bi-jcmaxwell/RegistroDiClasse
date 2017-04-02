@@ -5,10 +5,9 @@ import java.io.*;
 public class registrazione {
   public registrazione()
     {
+      Scanner sc = new Scanner (System.in);
       System.out.println ("inserire il nome utente");
-      Scanner nomeUtente = new Scanner (System.in);
       System.out.println ("inserire una password");
-      Scanner password = new Scanner (System.in);
       File newFile = new File("registrazione"+".txt");
       if(newFile.exists())
       {     
