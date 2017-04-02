@@ -5,37 +5,25 @@ import java.io.*;
 public class registrazione {
   public registrazione()
     {
+      String utente, password;
       Scanner sc = new Scanner (System.in);
       System.out.println ("inserire il nome utente");
-      System.out.println ("inserire una password");
-      File newFile = new File("registrazione"+".txt");
-      if(newFile.exists())
-      {     
-        System.out.println("Il file esiste già o la directory non esiste");   
-      }
-        else
-      {
-        try
-        {
-          newFile.createNewFile();    
-        }
-        catch(Exception e)
-        {
-          e.printStackTrace();
-        }
-        try
-        {
-          FileWriter fileW = new FileWriter(newFile);
-          BufferedWriter buffW = new BufferedWriter(fileW);                         
-          buffW.write(nomeUtente);
-          buffW.nextLine();
-          buffW.write(password);
-          buffW.nextLine();
-          System.out.println("Il file è stato creato!");
-          buffW.close();
-        }
-        catch(Exception e)
-        {
-          e.printStackTrace();
-        }               
+      utente = sc.nextString();
+      File newFile = new File("registrazioneUtenti"+".txt");
+      newFile.createNewFile();    
+      FileWriter fileW = new FileWriter(newFile);
+      BufferedWriter buffW = new BufferedWriter(fileW);                         
+      buffW.write(utente);
+      buffW.nextLine();
+      System.out.println("Il file è stato creato!");
+      buffW.close();
+      System.out.println ("inserire la password");
+      password = sc.nextString();
+      File newFile = new File("registrazionePassword"+".txt");
+      FileWriter fileW = new FileWriter(newFile);
+      BufferedWriter buffW = new BufferedWriter(fileW);                         
+      buffW.write(password);
+      buffW.nextLine();
+      System.out.println("Il file è stato creato!");
+      buffW.close();             
      }   
