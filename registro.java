@@ -1,7 +1,11 @@
 package registro;
 import java.util.Scanner;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
-public class registro {
+public class registro implements java.io.Serializable{
   private static final int prof = 9;
   private static final int stud = 30;
   private Professore p[];
@@ -93,3 +97,14 @@ public Professore accessoProfessore() {
         pr = p[pos];
         return pr;
 }
+public void salva() throws java.io.IOException{
+        ObjectOutputStream stream = new ObjectOutputStream(new FileOutputStream("registro.bin"));
+        stream.writeObject();
+        stream.close();
+    }
+    public registro carica() throws java.io.IOException, ClassNotFoundException{
+        ObjectInputStream stream = new ObjectInputStream(new FileInputStream("registro.bin"));
+        stream = () stream.readObject();
+        stream.close();
+        return registro;
+    }
