@@ -3,6 +3,8 @@ package registro;
 public class Studente {
   private String nome;
   private String cognome;
+  private String nomeUtente;
+  private String password;
   public Studente (String nome, String cognome) {
     setNome (nome);
     setCognome (cognome);
@@ -12,6 +14,10 @@ public class Studente {
   private void setNome (String n) {nome = n;}
   public String getCognome () {return cognome;}
   private void setCognome (String c) {cognome = c;}
+  public String getNomeUtente () {return nomeutente;}
+  private void setNomeUtente (String nU) {nomeUtente = nU;}
+  public String getPassword () {return password;}
+  private void setPassword (String p) {password = p;}
   
   public void menuStudenti() {
     int numS;
