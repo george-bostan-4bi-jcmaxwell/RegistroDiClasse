@@ -10,8 +10,8 @@ Il programma permdette ai professori e agli studenti di accedere al registro ins
 Il registro elettronico online verrà installato in locale sul proprio pc. Inoltre sarà progettato per essere installato e utilizzato attraverso un server remoto, per consentire a tutti gli utenti di visualizzare i voti o scrivere gli argomenti delle lezioni svolte, tramite internet.
 
 ###<b> Manuale d’uso </b>
-Se è la prima volta che si accede al registro si deve fare una registrazione con un USER NAME e una PASSWORD. Appena si entra nella pagina del portale si potranno vedere delle caselline con su scritte le materie, se si clicca sulla casellina appariranno tutti i voti della materia. Se la media è inferiore a 6 la scritta A RISCHIO BOCCIATURA appare in rosso altrimenti appare la scritta PROMOSSO in verde. Invece i professori potranno vedere tutti i voti della materia e potranno aggiungerli/toglierli , ogni voto negativo verrà scritto in rosso.
-Verranno richiesti User Name e Password ogni volta che si accede e verrà anche indicata la data e l'ora dell'ultimo accesso (logout).
+Se è la prima volta che si accede al registro si deve fare una registrazione con un NOME UTENTE e una PASSWORD. Appena si entra nella pagina del portale si potranno vedere delle caselline con su scritte le materie, se si clicca sulla casellina appariranno tutti i voti della materia. Se la media è inferiore a 6 la scritta A RISCHIO BOCCIATURA appare in rosso altrimenti appare la scritta PROMOSSO in verde. Invece i professori potranno vedere tutti i voti della materia e potranno aggiungerli/toglierli , ogni voto negativo verrà scritto in rosso.
+Verranno richiesti Nome utente e Password ogni volta che si accede e verrà anche indicata la data e l'ora attuale.
 Il file sarà unico per tutte le classi. 
 
 
