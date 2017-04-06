@@ -15,6 +15,9 @@ public class Professore {
   private double votiEducazioneFisica[];
   private double votiStoria[];
   private static final int votiMax = 50;
+  private String nomeUtente;
+  private String password;
+  
     
   public Professore (String nome, String cognome, String materia) {
     setNome (nome);
@@ -27,6 +30,10 @@ public class Professore {
   private void setNome (String n) {nome = n;}
   public String getCognome () {return cognome;}
   private void setCognome (String c) {cognome = c;}
+  public String getNomeUtente () {return nomeUtente;}
+  private void setNomeUtente (String nU) {nomeUtente = nU;}
+  public String getPassword () {return password;}
+  private void setPassword (String p) {password = p;}
   
   public void menuProfessori() {
     int numP;
