@@ -35,7 +35,7 @@ public class registro {
   }
   
   public  accessoStudente() {
-        int i;
+        int i, pos;
         Studente st;
         boolean trovato = false;
         String confrontaUtente, confrontaPassword;
@@ -46,15 +46,18 @@ public class registro {
         confrontaPassword = sc.next();
         for(i=0; i<prof; i++)
         {
+           st = s[i];
            if(p[i].getNomeUtente().equals(confrontaUtente) && admin.prof[i].getPassword().equals(confrontaPassword))
            {
                trovato = true;
-                            
+               pos = i;             
            }
            else
            }
-             if(t == 0)
+             if(trovato == false)
              {
                  System.out.println("Nome utente o password errati");
              }
-                   
+           }
+        }
+        return st;
