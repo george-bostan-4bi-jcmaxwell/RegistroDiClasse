@@ -34,7 +34,7 @@ public class registro {
     p[prof] = new Professore(utente, pass);
   }
   
-  public  accessoStudente() {
+  public Studente accessoStudente() {
         int i, pos;
         Studente st;
         boolean trovato = false;
@@ -44,10 +44,10 @@ public class registro {
         confrontaUtente = sc.next();
         System.out.println("Inserire password");
         confrontaPassword = sc.next();
-        for(i=0; i<prof; i++)
+        for(i=0; i<stud; i++)
         {
            st = s[i];
-           if(p[i].getNomeUtente().equals(confrontaUtente) && admin.prof[i].getPassword().equals(confrontaPassword))
+           if(s[i].getNomeUtente().equals(confrontaUtente) && s[i].getPassword().equals(confrontaPassword))
            {
                trovato = true;
                pos = i;             
@@ -60,4 +60,36 @@ public class registro {
              }
            }
         }
+        st = s[pos];
         return st;
+}
+
+public Professore accessoProfessore() {
+        int i, pos;
+        Professore pr;
+        boolean trovato = false;
+        String confrontaUtente, confrontaPassword;
+        Scanner sc = new Scanner(System.in); 
+        System.out.println("Inserire nome utente");
+        confrontaUtente = sc.next();
+        System.out.println("Inserire password");
+        confrontaPassword = sc.next();
+        for(i=0; i<prof; i++)
+        {
+           pr = p[i];
+           if(p[i].getNomeUtente().equals(confrontaUtente) && p[i].getPassword().equals(confrontaPassword))
+           {
+               trovato = true;
+               pos = i;             
+           }
+           else
+           }
+             if(trovato == false)
+             {
+                 System.out.println("Nome utente o password errati");
+             }
+           }
+        }
+        pr = p[pos];
+        return pr;
+}
