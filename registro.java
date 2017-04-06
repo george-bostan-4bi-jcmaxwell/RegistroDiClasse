@@ -27,9 +27,9 @@ public class registro {
     String utente;
     String pass;
     Scanner sc = new Scanner(System.in);
-    System.out.println("Inserire il nome utente dello studente");
+    System.out.println("Inserire il nome utente del professore");
     utente = sc.next();
-    System.out.println("Inserire la password dello studente");
+    System.out.println("Inserire la password del professore");
     pass = sc.next();
     p[prof] = new Professore(utente, pass);
   }
@@ -49,12 +49,12 @@ public class registro {
             {
                 case 1:
                     System.out.println("Inserire nome utente");
-                    nomeUtente = sc.next();
+                    confrontaUtente = sc.next();
                     System.out.println("Inserire password");
-                    password = sc.next();
+                    confrontaPassword = sc.next();
                     for(i=0; i<prof; i++)
                     {
-                        if(p[i].getNomeUtente().equals(nu) && admin.prof[i].getPassword().equals(pw))
+                        if(p[i].getNomeUtente().equals(confrontaUtente) && admin.prof[i].getPassword().equals(confrontaPassword))
                         {
                             homeProfessori(admin, i);
                             t = 1;
